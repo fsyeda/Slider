@@ -1,0 +1,42 @@
+$small: 1200px;
+$tablet_lg: 992px;
+$tablet: 767px;
+$mobile: 640px;
+$mobile_sm: 440px;
+$shadow: 0 0 20px rgba(0,0,0,0.05);
+
+@mixin small {
+  @media (max-width: #{$small}) {
+    @content;
+  }
+}
+@mixin tablet_lg {
+  @media (max-width: #{$tablet_lg}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: #{$tablet}) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+@mixin mobile_sm {
+  @media (max-width: #{$mobile_sm}) {
+    @content;
+  }
+}
+$deep_green : #173213;
+$light_green: #BCD5B9;
+$white      : #fff;
+$font       : 'Barlow Semi Condensed', sans-serif;
+:root{
+    --font      : #{$font};
+    --green-dk  : #{$deep_green};
+    --white     : #{$white};
+    --green-l   : #{$light_green}
+}
